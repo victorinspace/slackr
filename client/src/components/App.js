@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import '../styles/App.css'
 
-import ChatWindow from './ChatWindow'
+import ChatWindow from './chat-window/ChatWindow'
 
 class App extends Component {
   render () {
     return (
       <div>
-        <h1>Hello world</h1>
+        <h1>Slackr</h1>
 
 				<ChatWindow />
 			

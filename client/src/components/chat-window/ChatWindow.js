@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 
+import ChatLogView from './ChatLogView'
+import TypeField from './TypeField'
+
 class ChatWindow extends Component {
 	render() {
 		return (
 			<div>
-	
-				<div>
-					<input type="text" placeholder="Chat in here"/>
-				</div>
+
+				<ChatLogView />
+
+				<TypeField />
 
 			</div>
 		)
