@@ -4,14 +4,44 @@
 	margin: 0;
 }
 
+.title {
+	padding-left: 30px;
+	color: #939393;
+	font-style: italic;
+	margin: 20px auto;
+}
 
 /*****************************************
 	CHAT WINDOW
 *****************************************/
 
 /* Chat Log Viewer */
+.chat-room-container {
+	margin: 0 auto;
+	width: 500px;
+}
+
 .chat-log-container {
-	width: 300px;
+	width: 500px;
 	height: 300px;
-	border: 1px solid red;
+	border: 1px solid #eee;
+}
+
+/* Type Field Area */
+.type-field-area {
+	display: flex;
+	height: 50px;
+	margin-top: 20px
+}
+
+.type-field-area > input {
+	width: 80%;
+	padding-left: 10px;
+	border: 2px solid #eee;
+}
+
+.type-field-area > button {
+	width: 20%;
+	color: #939393;
+	font-style: italic;
 }
