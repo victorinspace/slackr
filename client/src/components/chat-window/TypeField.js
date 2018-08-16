@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { sendMessage } from '../../actions/chatActions'
-import { Provider } from 'react-redux'
+import { connect } from 'react-redux'
 
 
 class TypeField extends Component {
-
 	state = {
 		text: ''
 	}
@@ -22,14 +21,23 @@ class TypeField extends Component {
 
 	render() {
 		return (
-			<Provider>
-				<div>
-					<form className="type-field-area" onSubmit={this.handleUserMessage}>
-						<input type="text" name="text" placeholder="What you gotta say?" onChange={this.userMessage}/>
-						<button type="submit">Submit</button>
-					</form>
+			<div>
+				<div className="chat-log-container">
+					{this.props.messages.map(message => (
+						<div key={message.id}>
+							{message.message}
+						</div>
+					))}
 				</div>
-			</Provider>
+
+				<form onSubmit={this.handleUserMessage}
+							className="type-field-area" >
+					<input onChange={this.userMessage}
+									type="text" name="text" 
+									placeholder="What's on your mind?" />
+					<button type="submit">Submit</button>
+				</form>
+			</div>
 		)
 	}
 }
@@ -40,4 +48,4 @@ function mapStateToProps(appState) {
 	}
 }
 
-export default TypeField
+export default connect(mapStateToProps)(TypeField)

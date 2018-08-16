@@ -4,38 +4,45 @@
 	margin: 0;
 }
 
+html {
+	font-family: sans-serif;
+}
+
 .title {
 	padding-left: 30px;
 	color: #939393;
 	font-style: italic;
 	margin: 20px auto;
+	font-family: 'Shadows Into Light', cursive;
 }
 
 /*****************************************
 	CHAT WINDOW
 *****************************************/
 
-/* Chat Log Viewer */
+/* Chat Room  */
 .chat-room-container {
 	margin: 0 auto;
 	width: 500px;
 }
 
+/* Chat Log Viewer */
 .chat-log-container {
 	width: 500px;
 	height: 300px;
-	border: 1px solid #eee;
+	border: 2px solid #eee;
 }
 
 /* Type Field Area */
 .type-field-area {
 	display: flex;
+	justify-content: space-between;
 	height: 50px;
 	margin-top: 20px
 }
 
 .type-field-area > input {
-	width: 80%;
+	width: 75%;
 	padding-left: 10px;
 	border: 2px solid #eee;
 }
@@ -44,4 +51,6 @@
 	width: 20%;
 	color: #939393;
 	font-style: italic;
+	font-family: serif;
+	border: 2px solid #eee;
 }
