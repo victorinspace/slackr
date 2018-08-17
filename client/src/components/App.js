@@ -1,22 +1,25 @@
 import React, { Component } from 'react'
 import '../styles/App.css'
+import { Provider } from 'react-redux'
+import store from '../store'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+import LoginPageContainer from './login-page/LoginPageContainer'
 import ChatWindowContainer from './chat-window/ChatWindowContainer'
-// import LoginPageContainer from './login-page/LoginPageContainer'
 
 class App extends Component {
   render () {
     return (
-      <div>
-				<ChatWindowContainer />
-				
-      </div>
+      <Provider store={store}>
+      	<Router>
+      		<div>
+            <Route exact path="/" component={LoginPageContainer} />
+						<Route path="/chatwindow" component={ChatWindowContainer} />
+					</div>
+				</Router>
+      </Provider>
     )
   }
 }
 
 export default App
-
-// <LoginPageContainer />
-// <Route exact path="/" comonent={LoginPageContainer} />
-// <Route path="/chatwindow" component={ChatWindowContainer} />

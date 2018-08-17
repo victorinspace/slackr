@@ -6,10 +6,9 @@ import config from 'config'
 import socketio from 'socket.io'
 import http from 'http'
 import path from 'path'
-import runsocket from './chat'
+import runsocket from './chat/index'
 
 const app = express()
-
 
 app.use(logger('dev'))
 app.use(bodyParser.json())

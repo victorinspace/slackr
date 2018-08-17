@@ -19,6 +19,43 @@ html {
 
 
 /*****************************************
+	LOGIN PAGE
+*****************************************/
+
+/* Login Page Container */
+.login-page-container {
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.login-form-container {
+	display: flex;
+	justify-content: center;
+}
+
+.login {
+	width: 80%;
+	padding: 10px;
+	border: 2px solid #eee;
+}
+
+.password {
+	width: 80%;
+	padding: 10px;
+	border: 2px solid #eee;
+}
+
+.login-button {
+	font-style: italic;
+	font-family: serif;
+	border: 2px solid #eee;
+	color: #939393;
+	padding: 10px;
+}
+
+
+/*****************************************
 	CHAT WINDOW
 *****************************************/
 

@@ -10,7 +10,7 @@ class ChatWindow extends Component {
 
 	userMessage = (e) => {
 		this.setState({
-			[`e.target.name`]: e.target.value
+			[e.target.name]: e.target.value
 		})
 	}
 
@@ -26,11 +26,14 @@ class ChatWindow extends Component {
 		return (
 			<div>
 				<div className="chat-log-container">
-					{this.props.messages.map((message, i) => (
+					{this.props.messages.map((message, i) => {
+						console.log(message)
+						return (
 						<div key={'message' + i}>
 							{message.message}
 						</div>
-					))}
+						)
+					})}
 				</div>
 
 				<form onSubmit={this.handleUserMessage}

@@ -1,11 +1,12 @@
 function runsocket(io) {
 
-  io.on('connection', (socket) => {
-    socket.join('room1')
+  io.on('connection', function(socket) {
+    socket.join('room')
     
     console.log('connected')
-    socket.on('messsage room', (data) => {
-    	io.to('room').emit('message room', data)
+    socket.on('message', function(data) {
+    	console.log('receiving message')
+    	io.to('room').emit('message', data)
     })
   })
 
