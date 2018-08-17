@@ -8,6 +8,7 @@ html {
 	font-family: sans-serif;
 }
 
+/* Logo / Project Name */
 .title {
 	padding-left: 30px;
 	color: #939393;
@@ -16,11 +17,12 @@ html {
 	font-family: 'Shadows Into Light', cursive;
 }
 
+
 /*****************************************
 	CHAT WINDOW
 *****************************************/
 
-/* Chat Room  */
+/* Chat Room Container */
 .chat-room-container {
 	margin: 0 auto;
 	width: 500px;
@@ -33,7 +35,11 @@ html {
 	border: 2px solid #eee;
 }
 
+
 /* Type Field Area */
+/*---------------------------------------*/
+
+/* Type Field Container*/
 .type-field-area {
 	display: flex;
 	justify-content: space-between;
@@ -41,12 +47,14 @@ html {
 	margin-top: 20px
 }
 
+/* Uer Input Field */
 .type-field-area > input {
 	width: 75%;
 	padding-left: 10px;
 	border: 2px solid #eee;
 }
 
+/* Submit Button */
 .type-field-area > button {
 	width: 20%;
 	color: #939393;
