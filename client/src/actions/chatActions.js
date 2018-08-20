@@ -3,7 +3,6 @@ import store from '../store'
 
 const socket = io.connect('http://10.68.0.137:3001/')
 
-// dispatch to reducer, then to component
 socket.on('message', function(data) {
 	console.log('message received')
 	store.dispatch({
@@ -17,4 +16,8 @@ export function sendMessage(message) {
 	socket.emit('message', {
 		message: message
 	})
+}
+
+export function signIn(name) {
+	socket.emit('sign in', name)
 }

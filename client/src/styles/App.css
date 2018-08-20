@@ -66,23 +66,25 @@ html {
 }
 
 
-
 /*****************************************
 	USER REGISTRATION
 *****************************************/
 
+/* Registration Page Container */
 .registration-container {
 	width: 500px;
 	height: 500px;
 	margin: 0 auto;
 }
 
+/* Registration Elements Container*/
 .registration-window-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
+/* Create Username */
 .username {
 	width: 80%;
 	padding: 10px;
@@ -90,6 +92,8 @@ html {
 	border: 2px solid #eee;
 }
 
+/* Input Email for Verification */
+/* TODO: change to more valid input */
 .email {
 	width: 80%;
 	padding: 10px;
@@ -97,6 +101,7 @@ html {
 	border: 2px solid #eee;
 }
 
+/* Submit User Creation Button */
 .create-username-button {
 	font-style: italic;
 	font-family: serif;

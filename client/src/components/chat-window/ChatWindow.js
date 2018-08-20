@@ -17,6 +17,7 @@ class ChatWindow extends Component {
 	handleUserMessage = (e) => {
 		e.preventDefault()
 		sendMessage(this.state.text)
+
 		this.setState({
 			text: ''
 		})
@@ -26,12 +27,12 @@ class ChatWindow extends Component {
 		return (
 			<div>
 				<div className="chat-log-container">
-					{this.props.messages.map((message, i) => {
+					{this.props.messages.map( (message, i) => {
 						console.log(message)
 						return (
-						<div key={'message' + i}>
-							{message.message}
-						</div>
+							<div key={'message' + i}>
+								{message.name}: {message.message}
+							</div>
 						)
 					})}
 				</div>
