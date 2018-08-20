@@ -8,7 +8,8 @@ html {
 	font-family: sans-serif;
 }
 
-/* Logo / Project Name */
+/* Project Title */
+/*---------------------------------------*/
 .title {
 	padding-left: 30px;
 	color: #939393;
@@ -28,22 +29,26 @@ html {
 	margin: 100px auto;
 }
 
+/* Login Form Container */
 .login-form-container {
 	display: flex;
 }
 
+/* Login Input Field */
 .login {
 	width: 80%;
 	padding: 10px;
 	border: 2px solid #eee;
 }
 
+/* Password Input Field */
 .password {
 	width: 80%;
 	padding: 10px;
 	border: 2px solid #eee;
 }
 
+/* Login Submit Button */
 .login-button {
 	font-style: italic;
 	font-family: serif;

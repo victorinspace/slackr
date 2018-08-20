@@ -47,5 +47,5 @@ const io = socketio(server)
 runsocket(io)
 
 server.listen(config.get('server.port'), '0.0.0.0', () => {
-  console.log('connection on port ' + config.get('server.port'))
+  console.log('Connection made on port ' + config.get('server.port'))
 })
