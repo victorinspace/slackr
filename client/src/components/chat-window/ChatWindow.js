@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { sendMessage } from '../../actions/chatActions'
 import { connect } from 'react-redux'
+import Moment from 'react-moment'
+import 'moment-timezone'
 
 
 class ChatWindow extends Component {
@@ -26,7 +28,7 @@ class ChatWindow extends Component {
 	componentWillUpdate() {
 		
         var node = this.refs.messages
-        this.shouldScrollBottom = node.scrollTop + node.offsetHeight < node.scrollHeight
+        this.shouldScrollBottom = node.scrollTop + node.offsetHeight <= node.scrollHeight
         console.log(node.scrollTop, node.offsetHeight, node.scrollHeight)
     }
 
@@ -39,11 +41,13 @@ class ChatWindow extends Component {
 
 	render() {
 		return (
+
 			<div>
 				<div className="chat-log-container" ref="messages">
 					{this.props.messages.map( (message, i) => {
 						return (
 							<div key={'message' + i}>
+								<Moment parse="YYYY-MM-DD HH:mm">1976-04-19 12:59</Moment>
 								{message.name}: {message.message}
 							</div>
 						)
