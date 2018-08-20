@@ -23,12 +23,25 @@ class ChatWindow extends Component {
 		})
 	}
 
+	componentWillUpdate() {
+		
+        var node = this.refs.messages
+        this.shouldScrollBottom = node.scrollTop + node.offsetHeight < node.scrollHeight
+        console.log(node.scrollTop, node.offsetHeight, node.scrollHeight)
+    }
+
+    componentDidUpdate() {
+        if (this.shouldScrollBottom) {
+            var node = this.refs.messages
+            node.scrollTop = node.scrollHeight
+        }
+    }
+
 	render() {
 		return (
 			<div>
-				<div className="chat-log-container">
+				<div className="chat-log-container" ref="messages">
 					{this.props.messages.map( (message, i) => {
-						console.log(message)
 						return (
 							<div key={'message' + i}>
 								{message.name}: {message.message}

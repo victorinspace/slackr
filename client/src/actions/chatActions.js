@@ -21,3 +21,9 @@ export function sendMessage(message) {
 export function signIn(name) {
 	socket.emit('sign in', name)
 }
+
+export function autoScroll() {
+	setInterval(function() {
+		this.scrollBy(0, 1000)
+	}, 1500)
+}
