@@ -6,7 +6,7 @@ import Registration from './Registration'
 class RegistrationContainer extends Component {
 	render() {
 		return (
-			<div>
+			<div className='registration-container'>
 				
 				<Title />
 				<Registration />

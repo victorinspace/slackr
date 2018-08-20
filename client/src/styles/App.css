@@ -6,6 +6,7 @@
 
 html {
 	font-family: sans-serif;
+	color: #484848;
 }
 
 /* Project Title */
@@ -26,6 +27,7 @@ html {
 /* Login Page Container */
 .login-page-container {
 	width: 500px;
+	height: 500px;
 	margin: 100px auto;
 }
 
@@ -55,6 +57,47 @@ html {
 	border: 2px solid #eee;
 	color: #939393;
 	padding: 10px;
+}
+
+
+
+/*****************************************
+	USER REGISTRATION
+*****************************************/
+
+.registration-container {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.registration-window-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.username {
+	width: 80%;
+	padding: 10px;
+	margin-top: 20px;
+	border: 2px solid #eee;
+}
+
+.email {
+	width: 80%;
+	padding: 10px;
+	margin-top: 20px;
+	border: 2px solid #eee;
+}
+
+.create-username-button {
+	font-style: italic;
+	font-family: serif;
+	border: 2px solid #eee;
+	color: #939393;
+	padding: 10px;
+	margin-top: 20px;
 }
 
 
