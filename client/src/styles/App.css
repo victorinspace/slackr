@@ -126,6 +126,7 @@ html {
 .chat-log-container {
 	width: 500px;
 	height: 300px;
+	overflow: auto;
 	border: 2px solid #eee;
 }
 

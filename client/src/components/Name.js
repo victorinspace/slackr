@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { signIn } from '../actions/chatActions'
 
+import Title from './Title'
+
 class Name extends Component {
 	state = {
 		name: ''
@@ -19,10 +21,13 @@ class Name extends Component {
 
 	render() {
 		return (
-			<div>
-				 <form onSubmit={this.handleSubmit}>
-						<input type="text" value={this.state.name} onChange={this.handleChange} name="name" placeholder="Pick Yo Name, Foo!" />
-						<button type="submit">I Plead The Fif</button>
+			<div className="login-page-container">
+				<Title />
+
+				<h3 className="page-title">Log In</h3>
+				 <form className="login-form-container" onSubmit={this.handleSubmit}>
+						<input className="login" type="text" value={this.state.name} onChange={this.handleChange} name="name" placeholder="Pick Yo Name, Foo!" />
+						<button className="login-button" type="submit">I Plead The Fif</button>
 				 </form>
 			</div>
 		)
