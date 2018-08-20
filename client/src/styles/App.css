@@ -25,13 +25,11 @@ html {
 /* Login Page Container */
 .login-page-container {
 	width: 500px;
-	margin: 0 auto;
-	border: 1px solid red;
+	margin: 100px auto;
 }
 
 .login-form-container {
 	display: flex;
-	justify-content: center;
 }
 
 .login {
