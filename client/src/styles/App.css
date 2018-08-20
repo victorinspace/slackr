@@ -9,6 +9,10 @@ html {
 	color: #484848;
 }
 
+ul {
+	list-style: none;
+}
+
 /* SLACKR Logo */
 /*---------------------------------------*/
 .title {
@@ -130,6 +134,7 @@ html {
 	border: 2px solid #eee;
 }
 
+/* Message Timestamp */
 .timestamp {
 	font-size: 10px;
 	color: #939393;
@@ -161,4 +166,26 @@ html {
 	font-style: italic;
 	font-family: serif;
 	border: 2px solid #eee;
+}
+
+
+/*****************************************
+	CHANNELS LIST
+*****************************************/
+
+/* Channels Container */
+.channels-container {
+	margin: 0 auto;
+	width: 500px;
+}
+
+/* Listing of Available Channels */
+.channels-listings {
+	border: 1px solid green;
+}
+
+/* Individual Channel */
+.channel {
+	margin: 5px 0;
+	font-style: italic;
 }
