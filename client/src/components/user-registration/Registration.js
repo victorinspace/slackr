@@ -5,7 +5,7 @@ class Registration extends Component {
 		return (
 			<div className="registration-window-container">
 				
-				<h3>Create Your Account</h3>
+				<h3 className="page-title">Create Your Account</h3>
 				<form>
 					<input className="username" type="text" placeholder="Name"  />
 

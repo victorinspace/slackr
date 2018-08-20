@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 
-import Title from '../Title'
-
 class Login extends Component {
 	render() {
 		return (
-			<div className="login-page-container">
-				<Title />
-
+			<div>
+				<h3 className="page-title">Log In</h3>
 				<form className="login-form-container">
 					<input className="login" type="text" placerholder="username" />
 					<input className="password" type="password" placerholder="password" />

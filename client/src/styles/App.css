@@ -9,7 +9,7 @@ html {
 	color: #484848;
 }
 
-/* Project Title */
+/* SLACKR Logo */
 /*---------------------------------------*/
 .title {
 	padding-left: 30px;
@@ -17,6 +17,12 @@ html {
 	font-style: italic;
 	margin: 20px auto;
 	font-family: 'Shadows Into Light', cursive;
+}
+
+/* Page Title */
+/*---------------------------------------*/
+.page-title {
+	margin: 20px 0;
 }
 
 
