@@ -130,6 +130,11 @@ html {
 	border: 2px solid #eee;
 }
 
+.timestamp {
+	font-size: 10px;
+	color: #939393;
+	font-weight: lighter;
+}
 
 /* Type Field Area */
 /*---------------------------------------*/

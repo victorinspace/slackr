@@ -12,18 +12,14 @@ socket.on('message', function(data) {
 })
 
 export function sendMessage(message) {
+	const timestamp = new Date().toLocaleDateString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true})
 	console.log('sending message')
 	socket.emit('message', {
-		message: message
+		message: message,
+		timestamp: timestamp
 	})
 }
 
 export function signIn(name) {
 	socket.emit('sign in', name)
-}
-
-export function autoScroll() {
-	setInterval(function() {
-		this.scrollBy(0, 1000)
-	}, 1500)
 }
