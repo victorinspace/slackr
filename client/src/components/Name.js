@@ -23,11 +23,9 @@ class Name extends Component {
 		return (
 			<div className="login-page-container">
 				<Title />
-
-				<h3 className="page-title">Log In</h3>
 				 <form className="login-form-container" onSubmit={this.handleSubmit}>
-						<input className="login" type="text" value={this.state.name} onChange={this.handleChange} name="name" placeholder="Pick Yo Name, Foo!" />
-						<button className="login-button" type="submit">I Plead The Fif</button>
+						<input className="login" type="text" value={this.state.name} onChange={this.handleChange} name="name" placeholder="Username" />
+						<button className="login-button" type="submit">Login</button>
 				 </form>
 			</div>
 		)

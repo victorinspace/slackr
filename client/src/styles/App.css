@@ -14,6 +14,55 @@ html {
 	color: var(--font-color);
 }
 
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
 ul {
 	list-style: none;
 }
@@ -49,13 +98,17 @@ ul {
 /* Login Form Container */
 .login-form-container {
 	display: flex;
+	border-radius: 3px;
+	border: 3px solid #eee;
+	background: white;
 }
 
 /* Login Input Field */
 .login {
-	width: 80%;
+	width: 100%;
 	padding: 10px;
-	border: 2px solid #eee;
+	padding-left: 15px;
+	border: none;
 }
 
 /* Password Input Field */
@@ -67,10 +120,10 @@ ul {
 
 /* Login Submit Button */
 .login-button {
+	width: 20%;
 	font-style: italic;
-	font-family: serif;
-	border: 2px solid #eee;
 	color: #939393;
+	border: none;
 	padding: 10px;
 }
 
@@ -137,7 +190,7 @@ ul {
 	height: 300px;
 	overflow: auto;
 	padding: 5px;
-	/*border: 5px solid var(--border-color);*/
+	background: white;
 	border: 3px solid #eee;
 	border-radius: 3px;
 }
@@ -146,7 +199,7 @@ ul {
 	color: green;
 	font-size: 16px;
 	font-weight: 900;
-	padding-bottom: 3px;
+	padding-bottom: 2px;
 }
 
 .user-message {
