@@ -8,7 +8,6 @@ import LoginPageContainer from './login-page/LoginPageContainer'
 import RegistrationContainer from './user-registration/RegistrationContainer'
 import ChatWindowContainer from './chat-window/ChatWindowContainer'
 import Channels from './channel-list/Channels'
-import UsersView from './user-view/UsersView'
 
 import Name from './Name'
 

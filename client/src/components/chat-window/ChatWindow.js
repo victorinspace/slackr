@@ -42,7 +42,10 @@ class ChatWindow extends Component {
 					{this.props.messages.map( (message, i) => {
 						return (
 							<div key={'message' + i}>
-								{message.timestamp} {message.name}: {message.message}
+								<div className="message-name">
+									{message.name}: <span className="user-message">{message.message}</span>
+								</div>
+								<div className="message-timestamp">{message.timestamp}</div> 
 							</div>
 						)
 					})}
