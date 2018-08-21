@@ -43,7 +43,7 @@ class ChatWindow extends Component {
 						return (
 							<div key={'message' + i}>
 								<div className="message-name">
-									{message.name}: <span className="user-message">{message.message}</span>
+									{message.name}<span className="user-message">: {message.message}</span>
 								</div>
 								<div className="message-timestamp">{message.timestamp}</div> 
 							</div>
@@ -56,7 +56,7 @@ class ChatWindow extends Component {
 					<input onChange={this.userMessage}
 									type="text" name="text" 
 									value={this.state.text}
-									placeholder="What's on your mind?" />
+									placeholder="..." />
 					<button type="submit">Submit</button>
 				</form>
 			</div>

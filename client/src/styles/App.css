@@ -10,7 +10,7 @@
 }
 
 html {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
 	color: var(--font-color);
 }
 
@@ -137,23 +137,30 @@ ul {
 	height: 300px;
 	overflow: auto;
 	padding: 5px;
-	border: 5px solid var(--border-color);
+	/*border: 5px solid var(--border-color);*/
+	border: 3px solid #eee;
 	border-radius: 3px;
 }
 
 .message-name {
 	color: green;
-	padding: 3px 0;
+	font-size: 16px;
+	font-weight: 900;
+	padding-bottom: 3px;
 }
 
 .user-message {
+	font-size: 16px;
+	font-weight: normal;
 	color: var(--font-color);
 }
 
 /* Message Timestamp */
 .message-timestamp {
-	font-size: 8px;
+	font-size: 12px;
 	color: #8c8c8c;
+	padding-bottom: 5px;
+	font-style: italic;
 	font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -165,14 +172,17 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	height: 50px;
-	margin-top: 20px
+	margin-top: 20px;
+	border: 3px solid #eee;
+	border-radius: 3px;
 }
 
 /* Uer Input Field */
 .type-field-area > input {
-	width: 75%;
-	padding-left: 10px;
-	border: 2px solid #eee;
+	width: 100%;
+	padding-left: 15px;
+	color: var(--font-color);
+	border: none;
 }
 
 /* Submit Button */
@@ -180,8 +190,7 @@ ul {
 	width: 20%;
 	color: #939393;
 	font-style: italic;
-	font-family: serif;
-	border: 2px solid #eee;
+	border: none;
 }
 
 
