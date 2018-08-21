@@ -10,14 +10,17 @@ class Channels extends Component {
 	render() {
 		return (
 			<div className="channels-container">
-				
+					
 				<Title />
 				<h3 className="page-title">Channels</h3>
-				<ul className="channels-listings">
-					<li className="channel"><Link to={'/chatwindow'}>Channel One</Link></li>
-					<li className="channel"><Link to={'/chatwindow'}>Channel Two</Link></li>
-					<li className="channel"><Link to={'/chatwindow'}>Channel Three</Link></li>
-				</ul>
+
+				<div className="channels-list-container">
+					<ul className="channels-listings">
+						<li className="channel"><Link to={'/chatwindow'}>Channel One</Link></li>
+						<li className="channel"><Link to={'/chatwindow'}>Channel Two</Link></li>
+						<li className="channel"><Link to={'/chatwindow'}>Channel Three</Link></li>
+					</ul>
+				</div>
 
 			</div>
 		)

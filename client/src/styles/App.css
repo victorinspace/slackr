@@ -175,18 +175,42 @@ ul {
 
 /* Channels Container */
 .channels-container {
-	margin: 0 auto;
 	width: 500px;
+	margin: 0 auto;
+}
+
+.channels-list-container {
+	width: 500px;
+	height: 300px;
+	overflow: auto;
+	border: 2px solid #eee;
 }
 
 /* Listing of Available Channels */
 .channels-listings {
-	border: 1px solid green;
+	padding: 10px;
 }
 
 /* Individual Channel */
 .channel {
-	margin: 5px 0;
+	margin: 10px 0;
 	font-style: italic;
 }
 
+
+/*****************************************
+	CHANNELS LIST
+*****************************************/
+
+.users-view-container {
+	width: 300px;
+	height: 100px;
+	overflow: auto;
+	padding: 5px;
+	border: 2px solid #eee;
+}
+
+.users-view-title {
+	margin: 10px 0;
+	font-size: 16px;
+}

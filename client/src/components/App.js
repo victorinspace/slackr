@@ -8,6 +8,7 @@ import LoginPageContainer from './login-page/LoginPageContainer'
 import RegistrationContainer from './user-registration/RegistrationContainer'
 import ChatWindowContainer from './chat-window/ChatWindowContainer'
 import Channels from './channel-list/Channels'
+import UsersView from './user-view/UsersView'
 
 import Name from './Name'
 
@@ -18,10 +19,10 @@ class App extends Component {
       	<Router>
       		<div>
             <Route exact path="/" component={Name} /> 
-            <Route path='/login' component={LoginPageContainer} />
-            <Route path='/registration' component={RegistrationContainer} />
-						<Route path='/chatwindow' component={ChatWindowContainer} />
-            <Route path="/channels" component={Channels} />
+            <Route path="/login" component={LoginPageContainer} />
+            <Route path="/registration" component={RegistrationContainer} />
+						<Route path="/chatwindow" component={ChatWindowContainer} />
+            <Route path="/channels" component={Channels} />"
 					</div>
 				</Router>
       </Provider>
