@@ -7,6 +7,7 @@ import socketio from 'socket.io'
 import http from 'http'
 import path from 'path'
 import runsocket from './chat/index'
+import authRoutes from './routes/auth'
 
 const app = express()
 
@@ -15,6 +16,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
+
+app.use('/api', authRoutes)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')

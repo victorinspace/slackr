@@ -14,6 +14,8 @@ html {
 	color: var(--font-color);
 }
 
+/* CSS TRANSITIONS by: */
+/* https://codepen.io/P1N2O/pen/pyBNzX */
 body {
 	width: 100wh;
 	height: 90vh;
@@ -62,16 +64,12 @@ body {
 	}
 }
 
-
-ul {
-	list-style: none;
-}
-
 /* SLACKR Logo */
 /*---------------------------------------*/
 .title {
 	padding-left: 30px;
-	color: #939393;
+	font-size: 3em;
+	color: #cdcdcd;
 	font-style: italic;
 	margin: 20px auto;
 	font-family: 'Shadows Into Light', cursive;
@@ -105,7 +103,7 @@ ul {
 
 /* Login Input Field */
 .login {
-	width: 100%;
+	width: 40%;
 	padding: 10px;
 	padding-left: 15px;
 	border: none;
@@ -113,9 +111,10 @@ ul {
 
 /* Password Input Field */
 .password {
-	width: 80%;
+	width: 40%;
 	padding: 10px;
 	border: 2px solid #eee;
+	border: none;
 }
 
 /* Login Submit Button */
@@ -147,7 +146,7 @@ ul {
 }
 
 /* Create Username */
-.username {
+.register-username {
 	width: 80%;
 	padding: 10px;
 	margin-top: 20px;
@@ -155,8 +154,7 @@ ul {
 }
 
 /* Input Email for Verification */
-/* TODO: change to more valid input */
-.email {
+.register-email {
 	width: 80%;
 	padding: 10px;
 	margin-top: 20px;
@@ -228,6 +226,7 @@ ul {
 	margin-top: 20px;
 	border: 3px solid #eee;
 	border-radius: 3px;
+	background: white;
 }
 
 /* Uer Input Field */
@@ -236,6 +235,7 @@ ul {
 	padding-left: 15px;
 	color: var(--font-color);
 	border: none;
+	background: white;
 }
 
 /* Submit Button */
@@ -244,6 +244,7 @@ ul {
 	color: #939393;
 	font-style: italic;
 	border: none;
+	background: white;
 }
 
 
@@ -251,33 +252,37 @@ ul {
 	CHANNELS LIST
 *****************************************/
 
-/* Channels Container */
+/* Channels Page Container */
 .channels-container {
 	width: 500px;
 	margin: 0 auto;
+	
 }
 
-.channels-list-container {
-	width: 500px;
-	height: 300px;
+.chat-rooms-list {
 	overflow: auto;
-	border: 2px solid #eee;
-}
-
-/* Listing of Available Channels */
-.channels-listings {
-	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	cursor: pointer;
 }
 
 /* Individual Channel */
 .channel {
 	margin: 10px 0;
 	font-style: italic;
+	border: 3px solid #eee;
+	border-radius: 3px;
+	padding: 10px;
+	background: white;
+}
+
+.channel > a {
+	text-decoration: none;
 }
 
 
 /*****************************************
-	CHANNELS LIST
+	USERS VIEW
 *****************************************/
 
 .users-view-container {
@@ -286,6 +291,7 @@ ul {
 	overflow: auto;
 	padding: 5px;
 	border: 2px solid #eee;
+	background: grey;
 }
 
 .users-view-title {

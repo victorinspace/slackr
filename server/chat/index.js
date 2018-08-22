@@ -6,21 +6,20 @@ function runsocket(io) {
 		})
 
     socket.join('room')
+    socket.join('general')
+    socket.join('entertainment')
+    socket.join('games') 
+    socket.join('sports')
+    socket.join('music')
     
 		console.log('connected')
     socket.on('message', function(data) {
-			const obj = Object.assign(data, {
-				name: socket.name
-			})
+		const obj = Object.assign(data, {
+			name: socket.name
+		})
 			
-    	io.to('room').emit('message', obj)
+  	io.to('room').emit('message', obj)
     })
-
-    // console.log('connected')
-    // socket.on('message', function(data) {
-    // 	console.log('receiving message')
-    // 	io.to('room').emit('message', data)
-    // })
   })
 
 }
