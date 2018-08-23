@@ -69,7 +69,7 @@ body {
 .title {
 	padding-left: 30px;
 	font-size: 3em;
-	color: #cdcdcd;
+	/*color: #cdcdcd;*/
 	font-style: italic;
 	margin: 20px auto;
 	font-family: 'Shadows Into Light', cursive;

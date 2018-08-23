@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { sendMessage } from '../../actions/chatActions'
 import { connect } from 'react-redux'
+import { withAuth } from '../Authentication'
 
 class ChatWindow extends Component {
 	state = {
@@ -70,4 +71,4 @@ function mapStateToProps(appState) {
 	}
 }
 
-export default connect(mapStateToProps)(ChatWindow)
+export default withAuth(connect(mapStateToProps)(ChatWindow))

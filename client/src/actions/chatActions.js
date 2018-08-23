@@ -28,8 +28,11 @@ export function signIn(name) {
 	socket.emit('sign in', name)
 }
 
-export function register(register) {
-	api.post('/api/register', register).then(data => {
+export function registerUser(user) {
+	api.post('/api/register', user).then(data => {
 		console.log('data:', data)
+		// if (regsitratinworks) {
+		// 	go to login
+		// } 
 	})
 }
