@@ -17,10 +17,6 @@ class Login extends Component {
     })
   }
 
-  logout = () => {
-    this.props.signout()
-  }
-
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value

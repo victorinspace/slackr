@@ -23,6 +23,10 @@ class ChatWindow extends Component {
 		})
 	}
 
+	logout = (e) => {
+    this.props.signout()
+  }
+
 	componentWillUpdate() {	
     var node = this.refs.messages
     this.shouldScrollBottom = node.scrollTop + node.offsetHeight <= node.scrollHeight
@@ -60,6 +64,9 @@ class ChatWindow extends Component {
 									placeholder="..." />
 					<button type="submit">Submit</button>
 				</form>
+
+					<button className="logout-button" onClick={this.logout}>Logout</button>
+				
 			</div>
 		)
 	}

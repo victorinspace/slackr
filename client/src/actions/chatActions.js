@@ -28,11 +28,12 @@ export function signIn(name) {
 	socket.emit('sign in', name)
 }
 
+export function logout(name) {
+	socket.emit('log out', name)
+}
+
 export function registerUser(user) {
 	api.post('/api/register', user).then(data => {
 		console.log('data:', data)
-		// if (regsitratinworks) {
-		// 	go to login
-		// } 
 	})
 }

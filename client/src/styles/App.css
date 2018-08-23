@@ -145,30 +145,32 @@ body {
 	justify-content: space-evenly;
 }
 
+.registration-form-container {
+	border: 2px solid #eee;
+	border-radius: 3px;
+	background: white;
+}
+
 /* Create Username */
 .register-username {
-	width: 80%;
+	width: 40%;
 	padding: 10px;
-	margin-top: 20px;
-	border: 2px solid #eee;
+	border: none;
 }
 
 /* Input Email for Verification */
-.register-email {
-	width: 80%;
+.register-password {
+	width: 40%;
 	padding: 10px;
-	margin-top: 20px;
-	border: 2px solid #eee;
+	border: none;
 }
 
 /* Submit User Creation Button */
 .create-username-button {
-	font-style: italic;
-	font-family: serif;
-	border: 2px solid #eee;
+	border: none;
 	color: #939393;
 	padding: 10px;
-	margin-top: 20px;
+	width: 20%;
 }
 
 
@@ -281,12 +283,20 @@ body {
 }
 
 
+.bottom-chat-container {
+	display: flex;
+	margin: 0 auto;
+	width: 500px;
+	/*border: 2px solid red;*/
+}
+
+
 /*****************************************
 	USERS VIEW
 *****************************************/
 
 .users-view-container {
-	width: 300px;
+	width: 80%;
 	height: 100px;
 	overflow: auto;
 	padding: 5px;
@@ -297,4 +307,18 @@ body {
 .users-view-title {
 	margin: 10px 0;
 	font-size: 16px;
+}
+
+
+/*****************************************
+	LOG OUT
+*****************************************/
+
+.logout-button {
+	width: 100px;
+	height: 50px;
+	border-radius: 3px;
+	border: 2px solid #eee;
+	color: #939393;
+	font-style: italic;
 }
