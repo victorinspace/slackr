@@ -290,29 +290,23 @@ body {
 	cursor: pointer;
 }
 
-.bottom-chat-container {
-	display: flex;
-	margin: 0 auto;
-	width: 500px;
-}
-
 
 /*****************************************
 	USERS VIEW
 *****************************************/
 
+.users-view-title {
+	margin: 20px 0 10px;
+	font-size: 16px;
+}
+
 .users-view-container {
-	width: 80%;
-	height: 100px;
+	/*width: 90%;*/
+	height: 150px;
 	overflow: auto;
 	padding: 5px;
 	border: 2px solid #eee;
 	background: grey;
-}
-
-.users-view-title {
-	margin: 10px 0;
-	font-size: 16px;
 }
 
 

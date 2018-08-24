@@ -13,10 +13,8 @@ class ChatWindowContainer extends Component {
 				<Title />
 				<Channels />
 				<ChatWindow />
-				<div className="bottom-chat-container">
-					<UsersView />
-				</div>
-
+				<UsersView />
+				
 			</div>
 		)
 	}
