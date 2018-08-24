@@ -8,7 +8,7 @@ class Login extends Component {
 				<form className="login-form-container">
 					<input className="login" type="text" placerholder="username" />
 					<input className="password" type="password" placerholder="password" />
-					<button className="login-button">Log in</button>
+					<button className="login-button">Login</button>
 				</form>
 			</div>
 		)

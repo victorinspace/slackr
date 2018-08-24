@@ -2,10 +2,13 @@ import React, { Component } from 'react'
 import { sendMessage } from '../../actions/chatActions'
 import { connect } from 'react-redux'
 import { withAuth } from '../Authentication'
+import { EmojiConvertor } from 'emoji-js'
+import EmojiPicker from 'emoji-picker-react'
 
 class ChatWindow extends Component {
 	state = {
-		text: ''
+		text: '',
+		renderEmoji: false
 	}
 
 	userMessage = (e) => {
@@ -19,7 +22,8 @@ class ChatWindow extends Component {
 		sendMessage(this.state.text)
 
 		this.setState({
-			text: ''
+			text: '',
+			renderEmoji: false
 		})
 	}
 
@@ -40,6 +44,21 @@ class ChatWindow extends Component {
     }
   }
 
+  toggleEmoji = (e) => {
+  	this.setState({
+  		renderEmoji: !this.state.renderEmoji
+  	})
+  }
+
+  getEmoji = (code, data) => {
+  	let emoji = new EmojiConvertor()
+  	let output = emoji.replace_colons(`:${data.name}:`)
+  	this.setState({
+  		text: this.state.text + ' ' + output,
+  		renderEmoji: false
+  	})
+  }
+
 	render() {
 		return (
 			<div>
@@ -58,11 +77,17 @@ class ChatWindow extends Component {
 
 				<form onSubmit={this.handleUserMessage}
 							className="type-field-area" >
+							<button className="emojiButton" type="button" onClick={this.toggleEmoji}>
+								:D
+							</button>
 					<input onChange={this.userMessage}
 									type="text" name="text" 
 									value={this.state.text}
 									placeholder="..." />
 					<button type="submit">Submit</button>
+					<div>
+						{this.state.renderEmoji ? <EmojiPicker onEmojiClick={this.getEmoji} /> : ''}
+					</div>
 				</form>
 
 					<button className="logout-button" onClick={this.logout}>Logout</button>

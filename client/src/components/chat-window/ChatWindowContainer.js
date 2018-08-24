@@ -4,7 +4,6 @@ import ChatWindow from './ChatWindow'
 import Title from '../Title'
 import UsersView from '../users-view/UsersView'
 import Channels from '../chat-rooms/Channels'
-import SignOut from '../sign-out/SignOut'
 
 class ChatWindowContainer extends Component {
 	render() {

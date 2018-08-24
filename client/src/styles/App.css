@@ -88,7 +88,8 @@ body {
 
 /* Login Page Container */
 .login-page-container {
-	width: 500px;
+	width: 90%;
+	max-width: 500px;
 	height: 500px;
 	margin: 100px auto;
 }
@@ -181,12 +182,14 @@ body {
 /* Chat Room Container */
 .chat-room-container {
 	margin: 0 auto;
-	width: 500px;
+	/*width: 500px;*/
+	width: 90%;
+	max-width: 500px;
 }
 
 /* Chat Log Viewer */
 .chat-log-container {
-	width: 500px;
+	max-width: 500px;
 	height: 300px;
 	overflow: auto;
 	padding: 5px;
@@ -231,7 +234,7 @@ body {
 	background: white;
 }
 
-/* Uer Input Field */
+/* User Input Field */
 .type-field-area > input {
 	width: 100%;
 	padding-left: 15px;
@@ -254,17 +257,25 @@ body {
 	CHANNELS LIST
 *****************************************/
 
+@media only screen and (max-width: 500px) {
+	.chat-rooms-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
 /* Channels Page Container */
 .channels-container {
-	width: 500px;
+	width: 100%;
 	margin: 0 auto;
-	
+	max-width: 500px;
 }
 
 .chat-rooms-list {
 	overflow: auto;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	cursor: pointer;
 }
 
@@ -276,18 +287,13 @@ body {
 	border-radius: 3px;
 	padding: 10px;
 	background: white;
-}
-
-.channel > a {
 	text-decoration: none;
 }
-
 
 .bottom-chat-container {
 	display: flex;
 	margin: 0 auto;
 	width: 500px;
-	/*border: 2px solid red;*/
 }
 
 
@@ -316,6 +322,15 @@ body {
 
 .logout-button {
 	width: 100px;
+	height: 50px;
+	border-radius: 3px;
+	border: 2px solid #eee;
+	color: #939393;
+	font-style: italic;
+}
+
+.login-register {
+		width: 100px;
 	height: 50px;
 	border-radius: 3px;
 	border: 2px solid #eee;

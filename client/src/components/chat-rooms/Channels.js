@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 
-// TODO: Channels listing may be mapped data
-// based on existing channels
+import Movies from './Movies.js'
 
 class Channels extends Component {
 	render() {
@@ -10,11 +9,11 @@ class Channels extends Component {
 			<div className="channels-container">
 
 				<div className="chat-rooms-list">
-					<div className="channel"><Link to={'/chatwindow'}>General</Link></div>
-					<div className="channel"><Link to={'/chatwindow'}>Entertainment</Link></div>
-					<div className="channel"><Link to={'/chatwindow'}>Games</Link></div>
-					<div className="channel"><Link to={'/chatwindow'}>Sports</Link></div>
-					<div className="channel"><Link to={'/chatwindow'}>Music</Link></div>
+					<Route><Link className="channel" to={'/chatwindow'}>General</Link></Route>
+					<Route><Link className="channel" to={'/movies'} component={Movies}>Movies</Link></Route>
+					<Route><Link className="channel" to={'/chatwindow'}>Games</Link></Route>
+					<Route><Link className="channel" to={'/chatwindow'}>Sports</Link></Route>
+					<Route><Link className="channel" to={'/chatwindow'}>Music</Link></Route>
 				</div>
 
 			</div>

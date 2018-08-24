@@ -32,8 +32,9 @@ export function logout(name) {
 	socket.emit('log out', name)
 }
 
-export function registerUser(user) {
+export function registerUser(user, cb) {
 	api.post('/api/register', user).then(data => {
 		console.log('data:', data)
+		cb()
 	})
 }
