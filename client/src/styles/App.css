@@ -276,7 +276,6 @@ body {
 	overflow: auto;
 	display: flex;
 	justify-content: space-between;
-	cursor: pointer;
 }
 
 /* Individual Channel */
@@ -288,6 +287,7 @@ body {
 	padding: 10px;
 	background: white;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .bottom-chat-container {
@@ -323,14 +323,16 @@ body {
 .logout-button {
 	width: 100px;
 	height: 50px;
+	margin-top: 20px;
 	border-radius: 3px;
 	border: 2px solid #eee;
 	color: #939393;
 	font-style: italic;
+	cursor: pointer;
 }
 
 .login-register {
-		width: 100px;
+	width: 100px;
 	height: 50px;
 	border-radius: 3px;
 	border: 2px solid #eee;

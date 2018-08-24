@@ -77,14 +77,14 @@ class ChatWindow extends Component {
 
 				<form onSubmit={this.handleUserMessage}
 							className="type-field-area" >
-							<button className="emojiButton" type="button" onClick={this.toggleEmoji}>
-								:D
-							</button>
 					<input onChange={this.userMessage}
 									type="text" name="text" 
 									value={this.state.text}
 									placeholder="..." />
 					<button type="submit">Submit</button>
+					<button className="emojiButton" type="button" onClick={this.toggleEmoji}>
+						:D
+					</button>
 					<div>
 						{this.state.renderEmoji ? <EmojiPicker onEmojiClick={this.getEmoji} /> : ''}
 					</div>

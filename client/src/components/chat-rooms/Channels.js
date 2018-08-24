@@ -11,9 +11,9 @@ class Channels extends Component {
 				<div className="chat-rooms-list">
 					<Route><Link className="channel" to={'/chatwindow'}>General</Link></Route>
 					<Route><Link className="channel" to={'/movies'} component={Movies}>Movies</Link></Route>
-					<Route><Link className="channel" to={'/chatwindow'}>Games</Link></Route>
-					<Route><Link className="channel" to={'/chatwindow'}>Sports</Link></Route>
-					<Route><Link className="channel" to={'/chatwindow'}>Music</Link></Route>
+					<Route><Link className="channel" to={'/games'}>Games</Link></Route>
+					<Route><Link className="channel" to={'/sports'}>Sports</Link></Route>
+					<Route><Link className="channel" to={'/music'}>Music</Link></Route>
 				</div>
 
 			</div>

@@ -3,7 +3,7 @@ import store from '../store'
 import { api } from '../components/Authentication'
 
 
-const socket = io.connect('http://10.68.0.137:3001/')
+const socket = io.connect('http://192.168.0.16:3001')
 
 socket.on('message', function(data) {
 	console.log('message received')
